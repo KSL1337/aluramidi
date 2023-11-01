@@ -1,8 +1,28 @@
-// Pom ----------------------------------------
 function tocaSomPom () {
     document.querySelector('#som_tecla_pom').play();
+
+}
+document.querySelector('.tecla_pom').onclick = tocaSomPom;
+
+
+
+const ListaDeTeclas = document.querySelectorAll('.tecla');
+
+
+let contador = 0;
+
+while (contador <9) {
+
+    ListaDeTeclas[contador].onclick = tocaSomPom;
+    contador = contador + 1;
+    console.log(contador);
 }
 
-const listaDeTeclas = document.querySelectorAll('.tecla');
 
-listaDeTeclas[0].onclick = tocaSomPom;
+
+
+//document.querySelector('.tecla_pom').onclick = tocaSomPom;
+
+//document.querySelector('#som_tecla_pom').play();
+//document.querySelector('.tecla_pom')
+
