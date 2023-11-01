@@ -17,6 +17,11 @@ while (contador <9) {
     contador = contador + 1;
     console.log(contador);
 }
+while (contador <listaDeTeclas.lenght) {
+const efeito = listaDeTecla[contador].classList[1]
+    const idAuto = "#som_"+efeito;
+listaDeTeclas[contador].onclick = function()
+    }
 
 
 
