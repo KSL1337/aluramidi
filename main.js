@@ -22,7 +22,12 @@ const efeito = listaDeTecla[contador].classList[1]
     const idAuto = "#som_"+efeito;
 listaDeTeclas[contador].onclick = function()
     }
+{
+tocasSom(this.idAudio);
 
+}
+contador = contador + 1;
+console.log(contador);
 
 
 
